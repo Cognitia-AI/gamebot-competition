@@ -21,13 +21,27 @@ This repository holds the starter API for the GameBot Competition being held at 
 6. Once you have performed the above steps, leave the emulator window and tool box open and open the command prompt in the directory of the API and run the following commands:
 
     For Python API: `python controller.py 1`
-    For Java API: `javac -cp lib\json-20160212.jar *.java` (For compiling)
-                  `java -cp 'lib\json-20160212.jar;.' Controller 1` (For executing)
+
+    For Java API: 
+    
+    `javac -cp lib\json-20160212.jar *.java` (For compiling)
+    
+    `java -cp 'lib\json-20160212.jar;.' Controller 1` (For executing)
     
     Note: The '1' at the end of each execution command is a command-line argument. '1' is for controlling player 1 through your bot (left hand side player in the game). '2' if you want to contol player 2 (right hand side player in the game). Any command-line arguments other than '1' or '2' (without the quotes) will cause the code to give an error. (Yes we haven't done exception handling. Deal with it.)
 
 7. After executing the code, go and select your player(s) in the game after choosing normal mode. Controls for selecting players can be set or seen from the controllers option in the config drop down of the emulator.
 8. Now click on the second icon in the top row (Gyroscope Bot). This will cause the emulator to establish a connection with the program you ran and you will see "Connected to the game!" or "CONNECTED SUCCESSFULLY" on the terminal.
 9. If you have completed all of these steps successfully then you have successfully run the GameBot starter code.
+10. The program will stop once a single round is finished. Repeat this process for running the emulator and the code again.
 
-### 
+### API Details
+
+Both the API's contain similar code structure and files. Brief explanation of each file is explained as follows:
+
+* Buttons: Contains the Button class which represents a simple SNES gamepad used for playing Street Fighter. Each gamepad contains twelve buttons. So does the Buttons class which contains 12 members each representing a single button. The function of each button in the game of Street Fighter II can be seen in the below image:
+
+Street Fighter Controls: 
+![alt text](https://github.com/Cognitia-AI/gamebot-competition/Controls.png "Street Fighter Controls")
+
+* Player: Contains the Player class which represents a player.
