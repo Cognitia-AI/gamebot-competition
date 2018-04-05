@@ -88,11 +88,27 @@ SNES Gamepad Layout:
     is_round_over (boolean): Has the round ended yet?
 
 
-* Command: Contains the Command class which represents the command which will be passed to the game by the bot for the next time instance. Contains Buttons objects for the respective player from which you are playing. A command to the game will only consist of the buttons you want the bot to press at the next time instance.
+* Command: Contains the Command class which represents the command which will be passed to the game by the bot for the next time instance. It contains Buttons objects for the respective player from which you are playing. A command to the game will only consist of the buttons you want the bot to press at the next time instance.
 
 
 * Controller: Contains the socket connection logic, communication logic and the main game loop.
 
 
-### What you have to do?
+## What you have to do?
 
+You have to implement the fight function in the bot.py or Bot.java file. The fight function takes as input a GameState object representing the input from the game at the current time instance and a string indicating which player is playing through this program. You will have to use the information provided in the GameState object, set the buttons accordingly in the Command object and return that Command object from this function. A simple example is provided for your reference in the 'bot' file of both the APIs. In this example, the 'up' button is always being set to true which causes the bot to repeatedly jump in the game.
+
+### Submission
+
+You will have to submit the 'bot' file, all your helper classes and heler files and a README in which you will have to explain to us in detail how to run your code/solution on our machine for the tournament. The README should contain all the steps to set up and install the software dependencies or the libraries which you have used and to run your code. This submission will be done via a Google Form which will be shared with you one or two days before the deadline.
+
+
+#### Deadline: 11th April (Wednesday) 11:55 pm. Please be sure to observe the deadline.
+
+
+#### We hope that a thorough reading of this document will be able to answer most of your questions. But still you if you have queries, you can contact the event head or vice head.
+
+
+#### To run two bots at the same time (Optional)
+
+To run two bots at the same time and to make them fight each other, you will have to run both your bots at the same time. One with the command-line argument '1' and the other with the command-line argument '2'. Also be sure to select two players in the game in the VS Battle mode.
