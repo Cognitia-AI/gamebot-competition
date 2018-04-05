@@ -42,6 +42,11 @@ Both the API's contain similar code structure and files. Brief explanation of ea
 * Buttons: Contains the Button class which represents a simple SNES gamepad used for playing Street Fighter. Each gamepad contains twelve buttons. So does the Buttons class which contains 12 members each representing a single button. The function of each button in the game of Street Fighter II can be seen in the below image:
 
 Street Fighter Controls: 
+
 ![alt text](https://github.com/Cognitia-AI/gamebot-competition/blob/master/Controls.PNG "Street Fighter Controls")
+
+SNES Gamepad Layout:
+
+![alt text](https://github.com/Cognitia-AI/gamebot-competition/blob/master/snes_controller_layout.png "SNES Gamepad Layout")
 
 * Player: Contains the Player class which represents a player.
