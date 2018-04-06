@@ -86,7 +86,7 @@ public class Controller
         boolean roundSupport=false;
         while (currentGameState==null || currentGameState.isRoundOver==false){
             currentGameState=controller.receive(); //get the current state of the game
-            Command myCommand=Bot.fight(currentGameState, args[0]); //get the command
+            Command myCommand=bot.fight(currentGameState, args[0]); //get the command
             controller.send(myCommand); //send command to the game.
         }
     }
