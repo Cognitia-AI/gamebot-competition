@@ -4,9 +4,9 @@ import org.json.JSONObject;
 public class Command{
     Buttons playerButtons=new Buttons();
     Buttons player2Buttons=new Buttons();
-    private String type="buttons";
+    String type="buttons";
     private int playerCount=2;
-    private String saveGamePath="";
+    String saveGamePath="";
     JSONObject ObjectToJSON()
     {
         JSONObject json = new JSONObject();
