@@ -122,7 +122,7 @@ The process of beginning a new fight every time you start the emulator and load 
 
 #### Loading the saved game programatically (Very useful for training Reinforcement Learning algorithms / Online Training)
 
-NOTE: For this functionality to work, your local repository must be in sync with this GitHub repository i.e. it must contain the latest commit which happened 2 days ago.
+NOTE: For this functionality to work, your local repository must be in sync with this GitHub repository i.e. it must contain the latest commit.
 
 You can also load the saved game (method for saving a game is mentioned in the above paragraph) programatically in your bot for training purposes. For doing so follow the below mentioned steps:
 
