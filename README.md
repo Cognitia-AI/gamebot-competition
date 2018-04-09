@@ -112,3 +112,20 @@ You will have to submit the 'bot' file, all your helper classes and heler files 
 #### To run two bots at the same time (Optional)
 
 To run two bots at the same time and to make them fight each other, you will have to run both your bots at the same time. One with the command-line argument '1' and the other with the command-line argument '2'. Also be sure to select two players in the game in the VS Battle mode.
+
+
+### Useful Tips
+
+#### Saving and Loading game
+
+The process of beginning a new fight every time you start the emulator and load the ROM might be tedious for many. Fortunately there's a way to skip it. You can save the game running in the emulator at any point by pressing Shift + Any Function key till F10. And you can load this saved game at any point when the game is running in the emulator by simply pressing only the function key which you pressed with the Shift key while saving the game. This process could be used to save the game at the starting of a fight round and that saved state could be then loaded whenever you start the emulator and load the ROM thus skipping the player selection and waiting for the fight to start.
+
+#### Loading the saved game programatically (Very useful for training Reinforcement Learning algorithms / Online Training)
+
+NOTE: For this functionality to work, your local repository must be in sync with this GitHub repository i.e. it must contain the latest commit which happened 2 days ago.
+
+You can also load the saved game (method for saving a game is mentioned in the above paragraph) programatically in your bot for training purposes. For doing so follow the below mentioned steps:
+
+* Whenever you want to load your saved state, set the "type" variable of your Command object to 'reset'.
+* Set the savegamepath variable of the Command object with the absolute (full) path of the saved game file (the name and extension of the file included). The saved game file will be located in the single/double-player/SNES/State path in the API.
+* By returning this Command object, the game will get loaded from the saved game file.
